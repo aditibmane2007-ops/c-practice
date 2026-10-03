@@ -3,21 +3,29 @@
 
 int main()
 {
-    printf("Hello world!\n");
-    printf("What's the boolean value?");
-    bool isEven = 1;
+    printf("Enter your choice: ");
     int n;
-    for (int i = 0;i<5;i++){
+    scanf("%d",&n);
+    if (n<4){
+        switch(n){
+        case(0):
+            printf("A");
+            break;
+        case(1):
+            printf("B");
+            break;
+        case(2):
+            printf("C");
+            break;
+        case(3):
+            printf("D");
+            break;
 
-            printf("\n Enter no.: ");
-            scanf("%d",&n);
-            if (n%2 == 0){
-                printf("boolean value is:%d \n",isEven);
-            }
-            else {
-                printf("boolean value is:%d \n",!isEven);
-            }
 
+        }
+    }
+    else{
+        printf("Invalid input!");
     }
 
 
